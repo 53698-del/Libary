@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบยืม-คืนหนังสือ</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <h1>📚 ห้องสมุดออนไลน์</h1>
+      <p>ระบบยืม–คืนหนังสือ</p>
+    </header>
+
+    <section class="search-box">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 ค้นหาชื่อหนังสือ..."
+      >
+    </section>
+
+    <section class="stats">
+      <div class="stat-card">
+        <h3>หนังสือทั้งหมด</h3>
+        <span id="totalBooks">0</span>
+      </div>
+
+      <div class="stat-card">
+        <h3>พร้อมให้ยืม</h3>
+        <span id="availableBooks">0</span>
+      </div>
+
+      <div class="stat-card">
+        <h3>ถูกยืม</h3>
+        <span id="borrowedBooks">0</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>📖 รายการหนังสือ</h2>
+
+      <div id="bookList" class="book-list"></div>
+    </section>
+
+    <section class="borrow-section">
+      <h2>📝 รายการที่ยืมอยู่</h2>
+
+      <div id="borrowedList">
+        <p class="empty">ยังไม่มีหนังสือที่ยืม</p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- แจ้งเตือน -->
+  <div id="notification" class="notification"></div>
+
+</body>
+</html>
